@@ -1,0 +1,8 @@
+prefix=/home/ebrahim/turtlebot_milestone/devel
+
+Name: turtlebot3_slam
+Description: Description of turtlebot3_slam
+Version: 1.2.6
+Cflags: -I/home/ebrahim/turtlebot_milestone/src/turtlebot3/turtlebot3_slam/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs

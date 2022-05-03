@@ -1,0 +1,8 @@
+prefix=/home/ebrahim/turtlebot_milestone/devel
+
+Name: milestones_code
+Description: Description of milestones_code
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
