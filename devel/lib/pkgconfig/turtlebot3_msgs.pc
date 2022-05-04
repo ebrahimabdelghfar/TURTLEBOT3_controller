@@ -1,8 +1,8 @@
-prefix=/home/ebrahim/turtlebot_milestone/devel
+prefix=/home/ebrahim/TURTLEBOT3_controller/devel
 
 Name: turtlebot3_msgs
 Description: Description of turtlebot3_msgs
 Version: 1.0.1
-Cflags: -I/home/ebrahim/turtlebot_milestone/devel/include
+Cflags: -I/home/ebrahim/TURTLEBOT3_controller/devel/include
 Libs: -L${prefix}/lib 
 Requires: std_msgs message_runtime

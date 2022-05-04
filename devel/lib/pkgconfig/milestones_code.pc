@@ -1,4 +1,4 @@
-prefix=/home/ebrahim/turtlebot_milestone/devel
+prefix=/home/ebrahim/TURTLEBOT3_controller/devel
 
 Name: milestones_code
 Description: Description of milestones_code

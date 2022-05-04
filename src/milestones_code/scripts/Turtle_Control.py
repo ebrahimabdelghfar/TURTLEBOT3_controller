@@ -9,17 +9,16 @@ from tf.transformations import euler_from_quaternion
 class TurtleBot_waffle_pi:
 
     def __init__(self):
-        self.x_desired = float(input("Set your x goal: "))
-        self.y_desired = float(input("Set your y goal: "))
-        # Please, insert a number slightly greater than 0 (e.g. 0.01).
-        self.distance_tolerance = float(input("Set your tolerance: "))
-
         rospy.init_node('Turtlebot_Waffle_controller', anonymous=True)
         self.velocity_publisher = rospy.Publisher('/cmd_vel',Twist, queue_size=10)
         self.pose_subscriber = rospy.Subscriber('/odom',Odometry, self.update_pose)
         self.pose = Odometry()
         self.rate = rospy.Rate(10)
         self.yaw=0
+        self.x_desired = 0.0
+        self.y_desired = 0.0
+        # Please, insert a number slightly greater than 0 (e.g. 0.01).
+        self.distance_tolerance = 0.5
 
     def update_pose(self, data):
         #print(self.pose)
@@ -28,7 +27,7 @@ class TurtleBot_waffle_pi:
         quant=data.pose.pose.orientation
         quantlist=[quant.x,quant.y,quant.z,quant.w]
         _,_,self.yaw = euler_from_quaternion(quantlist)
-        print("x_cordinate",data.pose.pose.position.x," y_cordinate",data.pose.pose.position.y)
+        print("x_cordinate :",data.pose.pose.position.x,"\ny_cordinate :",data.pose.pose.position.y,"\n")
 
     def distance(self):
         return sqrt(pow((self.x_desired - self.pose.pose.pose.position.x), 2) + pow((self.y_desired - self.pose.pose.pose.position.y), 2))

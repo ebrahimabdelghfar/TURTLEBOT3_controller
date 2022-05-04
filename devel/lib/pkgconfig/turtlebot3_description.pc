@@ -1,4 +1,4 @@
-prefix=/home/ebrahim/turtlebot_milestone/devel
+prefix=/home/ebrahim/TURTLEBOT3_controller/devel
 
 Name: turtlebot3_description
 Description: Description of turtlebot3_description

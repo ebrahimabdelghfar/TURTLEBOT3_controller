@@ -1,0 +1,7 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/ebrahim/TURTLEBOT3_controller/devel/lib/python3/dist-packages",
+        "/home/ebrahim/Industrial_Robot_Arm/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
