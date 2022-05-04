@@ -18,6 +18,10 @@ rosrun milestones_code Turtle_Control.py
 ```
 # Video
 the following video show working go-to controller </br>
-https://user-images.githubusercontent.com/81301684/166639902-81fb22a2-8a4d-4ab3-94f2-3ebda0250464.mp4
+
+
+https://user-images.githubusercontent.com/81301684/166640629-58b60371-94b7-4d10-8281-04df76f7a6a4.mp4
+
+
 
 
