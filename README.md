@@ -16,12 +16,19 @@ open seconed terminal in same workspace
 source devel/setup.bash
 rosrun milestones_code Turtle_Control.py
 ```
-# Video
+# Control edition Video
 the following video show working go-to controller </br>
 
 
 https://user-images.githubusercontent.com/81301684/166640629-58b60371-94b7-4d10-8281-04df76f7a6a4.mp4
 
+# Path planning edition
 
+
+
+
+
+
+https://user-images.githubusercontent.com/81301684/169704292-bfd1b79c-1613-4400-8922-2f1bc29d6416.mp4
 
 
