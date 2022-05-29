@@ -11,7 +11,7 @@ class TurtleBot_waffle_pi:
     def __init__(self):
         rospy.init_node('Turtlebot_Waffle_controller', anonymous=True)
         self.velocity_publisher = rospy.Publisher('/cmd_vel',Twist, queue_size=10)
-        self.pose_subscriber = rospy.Subscriber('/odom',Odometry, self.update_pose)
+        self.pose_subscriber = rospy.Subscriber('/odom_noise',Odometry, self.update_pose)
         self.pose = Odometry()
         self.rate = rospy.Rate(10)
         self.yaw=0

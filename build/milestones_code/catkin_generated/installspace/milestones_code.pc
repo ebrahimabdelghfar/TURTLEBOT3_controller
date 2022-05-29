@@ -1,0 +1,8 @@
+prefix=/home/ebrahim/TURTLEBOT3_controller/install
+
+Name: milestones_code
+Description: Description of milestones_code
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
